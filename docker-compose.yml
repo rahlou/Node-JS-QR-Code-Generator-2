@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  realtimechat:
+    image: 'rahlou/node-js-qr-code-generator:latest'
+    environment:
+      - "PORT:3000"
+    ports:
+      - "80:3000"
+    volumes:
+      - ./:/app
