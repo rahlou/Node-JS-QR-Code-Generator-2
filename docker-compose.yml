@@ -1,7 +1,7 @@
 version: '3.3'
-services:
-  realtimechat:
-    image: 'rahlou/node-js-qr-code-generator:latest'
+services: 
+  chat:
+    image: 'quanch/qr_code_docker_repo:latest'
     environment:
       - "PORT:3000"
     ports:
