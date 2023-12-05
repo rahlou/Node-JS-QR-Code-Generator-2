@@ -8,7 +8,7 @@ node('ubuntu-appserver-3120')
 
     stage('Build-and-Tag')
     {
-        app = docker.build('quanch/qr_code_docker_repo')
+        app = docker.build('rahlou/node-js-qr-code-generator')
     }
 
     stage('Post-to-Dockerhub')
